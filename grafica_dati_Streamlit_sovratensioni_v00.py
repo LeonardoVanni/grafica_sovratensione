@@ -76,7 +76,7 @@ if file_caricato is not None:
     fig3 = px.scatter(
         dati.loc[
             (dati["Corrente"] >= 0) &
-            (dati["Potenziale"] <= -1.8)
+            (dati["Potenziale"] <= 0)
         ], 
         x='Corrente', 
         y='Potenziale', 
